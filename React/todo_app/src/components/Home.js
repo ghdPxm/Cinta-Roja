@@ -2,6 +2,7 @@ import React, {useState, useEffect} from 'react';
 import axios from 'axios';
 import CardTodo from './CardTodo';
 import NavBar from './NavBar';
+import ModalEdit from './ModalEdit';
 /*
     useState por que se necesita guardar 
     useEffect por que se necesita cargar los valores sin ningun evento 
@@ -51,7 +52,7 @@ function Home(){
 
     return(
         
-        <div>
+        <div className="App">
             <NavBar />              
             <div className="container mt-5 pt-5">  
                 {/*Boton para crear un nuevo todo's*/}
@@ -118,6 +119,7 @@ function Home(){
                    </div>
                 </div>
             </div>
+            <ModalEdit />
         </div> 
     )
 }

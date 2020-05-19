@@ -22,6 +22,10 @@ function CardTodo(props){
                 </p>
                 
             </div></a> 
+            <div className="card-fotter text-center">
+                <button className="btn btn-info">Editar</button>
+            </div>
+
         </div>
     )
 }
